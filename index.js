@@ -46,8 +46,6 @@ const colors = [
       const currentTime = Date.now();
       const deltaTime = currentTime - startTime;
       const randomNum =  randomIntegerFromInterval(0,5);
-      console.log(deltaTime)
-      console.log(randomNum)
 
       const indexColors = () => {
         colors.forEach(color => {
