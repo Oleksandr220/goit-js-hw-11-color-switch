@@ -6,16 +6,6 @@ const colors = [
     '#009688',
     '#795548',
   ];
-
-  const indexColors = () => {
-    colors.forEach(color => {
-      if(colors.indexOf(color) === randomNum){
-        console.log(color)
-      }
-  });
-}
-  
-
   
   const randomIntegerFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -58,7 +48,6 @@ const colors = [
     indexColors()
       
   }, 1000)
-console.log(setInterval)
 }
 
 const onClickBtnStop = () => {
