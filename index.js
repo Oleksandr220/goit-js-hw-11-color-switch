@@ -31,6 +31,7 @@ const colors = [
 
     const startTime = Date.now();
     timer.isActive = true;
+    refs.btnStart.disabled = true;
 
     timer.intervalId = setInterval(()=> {
       const currentTime = Date.now();
@@ -53,6 +54,7 @@ const colors = [
 const onClickBtnStop = () => {
   clearInterval(timer.intervalId);
   timer.isActive = false;
+  refs.btnStart.disabled = false;
 }
 
 
